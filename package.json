@@ -18,5 +18,8 @@
   "homepage": "https://github.com/s-taylor/array-split#readme",
   "devDependencies": {
     "ava": "^0.19.1"
+  },
+  "ava": {
+    "verbose": true
   }
 }
