@@ -3,8 +3,10 @@ const split = (array, fn) => {
     const key = fn(value);
     // discard values which resolve to a null or undefined key
     if (key == null) return result;
+
     if (result[key] == null) result[key] = [value];
     else result[key].push(value);
+
     return result;
   }, {})
 }
