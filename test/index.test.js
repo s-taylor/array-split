@@ -86,7 +86,19 @@ test('it must stringify numbers', (t) => {
   };
 
   t.deepEqual(result, expected);
-  
+});
+
+test('it must stringify booleans', (t) => {
+  const result = split(numbers, (i) => {
+    return (i > 4);
+  });
+
+  const expected = {
+    'false': [1, 2, 3, 4],
+    'true': [5, 6, 7, 8]
+  };
+
+  t.deepEqual(result, expected);
 });
 
 test('it must throw when a predicate returns an object', (t) => {
