@@ -29,6 +29,18 @@ test('it must return expected keys count', (t) => {
   t.is(Object.keys(result).length, 3);
 });
 
+test('it must return expected result', (t) => {
+  const result = split(numbers, predicate);
+
+  const expected = {
+    '1': [1],
+    '5+': [5, 6, 7, 8],
+    'other': [2, 3, 4]
+  };
+
+  t.deepEqual(result, expected);
+});
+
 test('it must drop null values', (t) => {
   const result = split(numbers, (i) => {
     if (i >= 5) return '5+';
