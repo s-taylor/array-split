@@ -3,6 +3,8 @@ const split = (array, fn) => {
     const key = fn(value);
     // discard values which resolve to a null or undefined key
     if (key == null) return result;
+    if (typeof key !== 'number' && typeof key !== 'string')
+      throw new Error('predicate must only return strings or numbers');
 
     if (result[key] == null) result[key] = [value];
     else result[key].push(value);
