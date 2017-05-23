@@ -1,6 +1,6 @@
 {
   "name": "array-split",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "split an array into multiple arrays using a predicate, with results keyed within an object",
   "main": "index.js",
   "scripts": {
