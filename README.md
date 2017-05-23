@@ -34,5 +34,5 @@ This will return...
 The predicate function only supports returning types...
 `null`, `undefined`, `string` or `number`
 
-If you return `null` or `undefined` the value is dropped from the result set.
-If you return a `string` or a `number`, it is keyed in the results object (numbers are converted to strings)
+- If you return `null` or `undefined` the value is dropped from the result set.
+- If you return a `string` or a `number`, it is keyed in the results object (numbers are converted to strings)
