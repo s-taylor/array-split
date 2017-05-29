@@ -9,8 +9,8 @@ returns an object containing the results keyed based on the return value of the 
 
 Example: Separate odd and even numbers
 
-```
-const split  = require('array-split');
+```js
+const split = require('array-split');
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -22,7 +22,7 @@ const result = split(numbers, (num) => {
 
 This will return...
 
-```
+```json
 {
   even: [2, 4, 6, 8],
   odd: [1, 3, 5, 7, 9]
